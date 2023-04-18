@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-background: #00030C;
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-buttons: #167BF7;
+    --fonte:'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-background);
+    color: var(--cor-principal);
+    font-family: var(--fonte);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container { 
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0rem 6rem;
+    
+}
+
+.principal {
+    background: var(--cor-background) url(assets/Background.png) no-repeat center center;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__header {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+#container__img {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.container__botao {
+    text-decoration: none;
+    background-color: var(--cor-buttons);
+    color: var(--cor-principal);
+    padding: 1rem;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 1rem;
+   
+
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 1px solid var(--cor-secundaria);
+
+}
+
+.container__botao:hover, .botao__secundario:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-background);
+    transition: 0.5s;
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__img {
+    width: 80%;
+   
+}
+
+.secundario__btn {
+    display: inline-block;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.descricao__texto {
+    color:var(--cor-secundaria);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dispositivos {
+    text-align: center;
+    margin-bottom: 9rem;
+}
+
+.container__dispositivos {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none     ;
+    
+}
+
+.container__dispositivos  p {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    margin: 0rem 10rem;
+
+    
+}
+
+footer > img {
+    margin-bottom: 2.5rem;
+}
+
+.footer__infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1.5rem 0rem;
+    list-style: none;
+}
+
+.footer__info__extra {
+    font-size: 0.8rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 6rem;
+    line-height: 1.3rem;
+}
